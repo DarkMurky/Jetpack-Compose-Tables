@@ -125,11 +125,7 @@ inline fun <reified T : Any> BeeTablesCompose(
                 }
 
                 // alternate background colors between rows
-                val tableRowBackgroundColor = if (index % 2 == 0) {
-                    tableRowColors[0]
-                } else {
-                    tableRowColors[1]
-                }
+                val tableRowBackgroundColor = tableRowColors[index]
 
                 if (disableVerticalDividers) {
                     TableRowComponentWithoutDividers(
